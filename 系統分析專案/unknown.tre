@@ -1,0 +1,33 @@
+PAGE
+    Toplevel: Homepage
+        Button: Button_scan  
+        Button: Button_record   command: newRecordWin
+        Button: Button_demand  
+        Button: Button_user   command: newUserWin
+        Label: icon  
+        Label: title  
+        Menu Bar
+    Toplevel: Toplevel 1
+        Menu Bar
+        Button: Button1  
+        Button: Button1_1  
+        Label: Label1  
+        Label: Label2  
+    Toplevel: Error Information
+        
+             command: 
+        set exit_flag 1
+        set exitvar 1
+    
+             command: 
+        vTcl:save_err_msg
+        set exit_flag 1
+        set exitvar 1
+    
+             command: 
+        destroy .err_top
+       set exit_flag 0
+        set exitvar 1
+    
+        
+
